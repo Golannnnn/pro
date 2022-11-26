@@ -1,0 +1,480 @@
+@font-face {
+  font-family: 'Assistant';
+  src: url("./fonts/Assistant.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+/* global */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  font-family: 'Assistant';
+  font-weight: 650;
+  font-variation-settings: "wght" 650;
+  color: #333333;
+}
+
+h3, h4, h5 {
+  font-family: 'Assistant';
+  font-weight: 500;
+  font-variation-settings: "wght" 500;
+  color: #696969;
+}
+
+p {
+  font-family: 'Assistant';
+  font-weight: 375;
+  font-variation-settings: "wght" 375;
+  color: #696969;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Assistant';
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+  padding: 10px 35px;
+  color: #ffffff;
+  background-color: #24956a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.small-bold-text {
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+  color: #333333;
+}
+
+main {
+  padding-top: 40px;
+}
+
+section {
+  padding: 35px 15px;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 3px 25px -7px rgba(0,0,0,0.3);
+  padding: 10px 15px;
+  /* to make it sticky */
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+#header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-right > h4 {
+  display: none;
+  color: #333333;
+  font-weight: 650;
+  font-variation-settings: "wght" 650;
+  padding: 0px 50px;
+
+}
+
+#header-right > button {
+  font-size: 0.8rem;
+}
+
+/* first section */
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url('./images/wave-haikei-4.svg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  margin-top: 20px;
+}
+
+#intro-right {
+  padding: 0px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+#intro-left {
+  padding: 0px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.intro-img {
+  width: 100%;
+  max-width: 450px;
+}
+
+#intro-right > *,
+#intro-left > * {
+  margin-bottom: 35px;
+}
+
+#intro-button {
+  padding: 10px 35px;
+  color: #24956a;
+  background-color: white;
+  border: 4px solid #24956a;
+  font-size: 1rem;
+  font-weight: 650;
+  font-variation-settings: "wght" 650;
+}
+
+.green-text {
+  color: #24956a;
+}
+
+#rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#star-images {
+  padding-right: 10px;
+}
+
+#star-images > * {
+    padding-top: 5px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 15px;
+}
+
+#customers-wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: center;
+  align-content: center;
+}
+
+#customers-wrapper img {
+  text-align: right;
+  padding: 15px;
+  width: 100%;
+  max-width: 100px;
+}
+
+/* second section */
+
+#plans {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('./images/wave-haikei-23.svg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
+
+#plans > * {
+  margin: 20px 0px;
+}
+
+.plan {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  max-width: 350px;
+}
+
+.icon {
+  padding: 0px 15px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+}
+
+.plan > * {
+    margin-bottom: 15px;
+}
+
+.bullets {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bullets > p {
+  color: #333333;
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+  margin: 10px 0px;
+}
+
+.bullet-img {
+  margin: 0px 0px -4px 5px;
+  position: relative;
+  width: 100%;
+  max-width: 20px;
+}
+
+/* third section */
+
+.pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  background-color: #f5f5f5;
+}
+
+#margins-left {
+  text-align: center;
+  max-width: 550px;
+  padding: 0px 20px 30px 20px;
+}
+
+/* image slider */
+
+#main-container {
+  padding: 0px 10px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+  animation: fade 1s ease;
+}
+
+@keyframes fade {
+  0%   { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+#image-container > img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#image-container {
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+#circles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20px 5px 20px 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+/* fourth section */
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-image: url('./images/wave-haikei-21.svg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
+
+#review-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: right;
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.review > div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.review > div > p {
+  color: #333333;
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+}
+
+.review img {
+  width: 50px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 568px) { 
+  #plans > * {
+     margin: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) { 
+  section {
+    padding: 80px 20px 0px 20px;
+  }
+
+  header {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: none;
+  }
+
+  main {
+    padding-top: 0px;
+  }
+
+  #intro {
+    height:100vh;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url('./images/blob-haikei-7.svg');
+    margin-top: 0px;
+  }
+
+  #rating {
+    justify-content: flex-end;
+  }
+
+  #intro-right {
+    padding: 0px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #intro-left {
+    padding-right: 10px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #customers-wrapper {
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: end;
+    align-content: end;
+    gap: 30px;
+  }
+
+  #customers-wrapper img {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .pics {
+    padding: 100px 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) { 
+  header {
+    justify-content: space-around;
+  }
+
+  #header-right > button {
+    display: none;
+  }
+
+  #header-right > h4 {
+    display: block;
+  }
+
+  #plans > * {
+    margin: 20px 20px;
+ }
+}
+
+@media screen and (min-width: 1300px) { 
+  #margins-left {
+    text-align: right;
+  }
+}
