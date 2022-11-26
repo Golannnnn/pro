@@ -1,1 +1,3 @@
-# professionals
+---
+permalink: /index.html
+---
