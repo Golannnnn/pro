@@ -281,7 +281,7 @@ header {
 .price-bullet-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
