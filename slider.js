@@ -32,6 +32,38 @@ circleContainer.addEventListener("click", (e) => {
   }
 });
 
+previous.addEventListener("click", () => {
+  let currentSibling = document.querySelector(".visible");
+  let previousSibling = currentSibling.previousElementSibling;
+  let lastSibling = currentSibling.parentNode.lastElementChild;
+
+  if (previousSibling !== null) {
+    currentSibling.classList.remove("visible");
+    previousSibling.classList.add("visible");
+  } else {
+    currentSibling.classList.remove("visible");
+    lastSibling.classList.add("visible");
+  }
+
+  circleFill();
+});
+
+next.addEventListener("click", () => {
+  let currentSibling = document.querySelector(".visible");
+  let nextSibling = currentSibling.nextElementSibling;
+  let firstSibling = currentSibling.parentNode.firstElementChild;
+
+  if (nextSibling !== null) {
+    currentSibling.classList.remove("visible");
+    nextSibling.classList.add("visible");
+  } else {
+    currentSibling.classList.remove("visible");
+    firstSibling.classList.add("visible");
+  }
+
+  circleFill();
+});
+
 setInterval(() => {
   for (let i = 0; i < images.length; i++) {
     if (images[i].classList.contains("visible")) {
