@@ -518,9 +518,9 @@ footer {
 }
 
 @media screen and (min-width: 568px) { 
-  .carousel img {
+  /* .carousel img {
     height: 300px;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) { 
@@ -569,9 +569,9 @@ footer {
     margin: 100px 0px 120px 0px;
   }
 
-  .carousel img {
+  /* .carousel img {
     height: 400px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) { 
