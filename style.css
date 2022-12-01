@@ -495,6 +495,22 @@ footer {
   padding-bottom: 7px;
 }
 
+.carousel {
+  background: rgb(255, 255, 255);
+  margin: 20px 0px 60px 0px;
+}
+
+.carousel-cell {
+  margin-right: 50px;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 350px) { 
   #header-left img {
     display: block;
@@ -502,7 +518,9 @@ footer {
 }
 
 @media screen and (min-width: 568px) { 
-
+  .carousel img {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 768px) { 
@@ -544,6 +562,15 @@ footer {
 
   .pics {
     padding: 100px 20px;
+  }
+
+  .carousel {
+    background: rgb(255, 255, 255);
+    margin: 100px 0px 120px 0px;
+  }
+
+  .carousel img {
+    height: 400px;
   }
 }
 

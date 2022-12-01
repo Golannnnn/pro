@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="flickity.min.css" media="screen" />
     <title>The Professionals</title>
 </head>
 <body>
@@ -56,13 +57,37 @@
             <!-- <a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon</a> -->
 
         </section>
+        
+        <div class="carousel"
+        data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": true }'>
+        <div class="carousel-cell">
+<img src="./images/1-5.png" alt="orange tree" />
+        </div>
+        <div class="carousel-cell">
+        <img src="./images/10.png" alt="submerged" />
 
-        <section class="pics" id="margins">
-            <!-- <div id="margins-left">
-                <h2>זה משפט על ההישגים שלנו</h2>
-                <h2>זה משפט על ההישגים שלנו ועוד דברים</h2>
-                <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו<p>
-            </div> -->
+        </div>
+        <div class="carousel-cell">
+        <img src="./images/13.png" alt="look-out" />
+
+        </div>
+        <div class="carousel-cell">
+        <img src="./images/18.png" alt="One World Trade" />
+
+        </div>
+        <div class="carousel-cell">
+        <img src="./images/2-4.png" alt="drizzle" />
+
+        </div>
+        <div class="carousel-cell">
+        <img src="./images/3-4.png" alt="cat nose" />
+
+        </div>
+        
+        
+      </div>
+
+        <!-- <section class="pics" id="margins">
             <div id="margins-right">
                 <div id="main-container">
                     <img src="./images/arrow-left.svg" alt="arrow-left" id="previous">
@@ -89,7 +114,7 @@
                     <div class="circle" data-index="7"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="pricing">
             <div class="price-container prem-container">
@@ -115,7 +140,7 @@
                     <button class="prem-btn">תקנה את הקורס</button>
                 </div>
             </div>
-            
+
             <div class="price-container reg-container">
                 <div class="price-top-wrapper">
                     <img src="./images/rocket_silver.svg" alt="">
@@ -140,6 +165,15 @@
                 </div>
             </div>
         </section>
+
+        <!-- <div class="carousel-container">
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": true }'>
+                    <img src="./images/1-5.png" alt="">
+                    <img src="./images/13.png" alt="">
+                    <img src="./images/3-4.png" alt="">
+            </div>
+        </div> -->
+          
 
     </main>
 
@@ -167,5 +201,6 @@
         <div class="gumroad-product-embed"><a href="https://henker.gumroad.com/l/drop">Loading...</a></div>
     </div> -->
     <script src="./slider.js"></script>
+    <script src="./flickity.pkgd.min.js"></script>
 </body>
 </html>
