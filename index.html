@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="flickity.min.css" media="screen" />
     <title>The Professionals</title>
@@ -149,7 +151,7 @@
                     <p>פרק על משהו מסוים 2</p>
                 </div>
                 <div class="price-bullet-wrapper">
-                    <img src="./images/close.png" alt="">
+                    <img src="./images/checkmark.png" alt="">
                     <p>פרק על משהו מסוים 3</p>
                 </div>
                 <div class="price-btn-wrapper">
@@ -158,14 +160,115 @@
             </div>
         </section>
 
-        <!-- <div class="carousel-container">
-            <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": true }'>
-                    <img src="./images/1-5.png" alt="">
-                    <img src="./images/13.png" alt="">
-                    <img src="./images/3-4.png" alt="">
-            </div>
-        </div> -->
-          
+
+        
+        <section class="timeline-section">
+            <section class="timeline">
+                <div class="container">
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>1</p></div>
+              
+                    <div class="timeline-content js--fadeInLeft">
+                      <h2>מבוא לדרופשיפינג</h2>
+                      <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                      <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                      <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>2</p></div>
+              
+                    <div class="timeline-content js--fadeInRight">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>3</p></div>
+              
+                    <div class="timeline-content js--fadeInLeft">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>4</p></div>
+              
+                    <div class="timeline-content js--fadeInRight">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>5</p></div>
+              
+                    <div class="timeline-content js--fadeInLeft">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>6</p></div>
+              
+                    <div class="timeline-content js--fadeInRight">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>7</p></div>
+              
+                    <div class="timeline-content js--fadeInLeft">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+              
+                  <!-- <div class="timeline-item">
+              
+                    <div class="timeline-img"></div>
+              
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                      <div class="timeline-img-header">
+                        <h2>Card Title</h2>
+                      </div>
+                      <div class="date">19 AUG 2016</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    </div>
+                  </div>   -->
+              
+                  <div class="timeline-item">
+                    <div class="timeline-img"><p>8</p></div>
+              
+                    <div class="timeline-content js--fadeInRight">
+                        <h2>מבוא לדרופשיפינג</h2>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                        <p>פה רשום משהו על הפרק שאנחנו מלמדים -</p>
+                    </div>
+                  </div> 
+                </div>
+              </section>
+              
+        </section>
 
     </main>
 
@@ -194,5 +297,6 @@
     </div> -->
     <script src="./slider.js"></script>
     <script src="./flickity.pkgd.min.js"></script>
+    <script src="./timeline.js"></script>
 </body>
 </html>
