@@ -36,19 +36,22 @@ html {
   /* --main-theme-color: rgb(62 125 255); */
   --main-theme-color: #0060af;
   /* --main-theme-color: rgb(  74, 108, 247); */
-  --secondary-theme-color: #006aff;
-  --secondary-bg: #f6f4f0;
+  /* --secondary-theme-color: #006aff; */
+  /* --secondary-bg: #f6f4f0; */
+  --dark-color: #111827;
+
+  --button-color: #111827;
 }
 
 h1 {
-  color: #111827;
+  color: var(--dark-color);
   font-size: 2.25rem;
   font-weight: 700;
   font-variation-settings: "wght" 700;
 }
 
 h2 {
-  color: #111827;
+  color: var(--dark-color);
   font-weight: 600;
   font-variation-settings: "wght" 600;
 }
@@ -93,6 +96,14 @@ main {
   padding-top: 40px;
 }
 
+.transparent {
+  background-color: transparent;
+}
+
+.hero-bg {
+  background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(158,211,255,0.4) 100%), url('./images/hero-shape-1.svg') no-repeat left top;
+}
+
 /* header */
 
 header {
@@ -100,6 +111,7 @@ header {
   justify-content: space-between;
   align-content: center;
   background-color: rgba(255, 255, 255, 1);
+  /* border-bottom: 1px solid #cfcfcf; */
   /* box-shadow: 0px 3px 25px -7px rgba(0,0,0,0.3); */
   padding: 15px 5px;
   /* to make it sticky */
@@ -174,8 +186,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 0px;
-  background-color: #ffffff;
+  margin-top: 40px;
   padding: 15px 20px;
 }
 
@@ -190,7 +201,7 @@ header {
 }
 
 #intro-button {
-  padding: 20px 30px;
+  padding: 15px 30px;
   background-color: var(--main-theme-color);
   border: 2px solid var(--main-theme-color);
   transition: background-color 0.5s, border 0.5s;
@@ -238,6 +249,31 @@ header {
   justify-content: center;
   align-items: flex-end;
   padding: 35px 15px;
+
+  /* background-image: url("./images/shape.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  
+}
+
+.svg-wrapper {
+  z-index: -1;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.svg-wrapper-sec {
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.svg-wrapper-sec > svg {
+  transform: rotate(180deg);
 }
 
 .price-container {
@@ -365,8 +401,8 @@ header {
   font-variation-settings: "wght" 450;
   width: 100%;
   color: white!important;
-  background-color: #111827!important;
-  border: 2px solid #111827!important;
+  background-color: var(--dark-color)!important;
+  border: 2px solid var(--dark-color)!important;
   transition: background-color 0.5s, border 0.5s;
 }
 
@@ -384,7 +420,7 @@ header {
   align-items: center;
   padding: 80px 10px;
   text-align: right;
-  background-color: #111827;
+  background-color: var(--dark-color);
 }
 
 .review-section > h1 {
@@ -401,6 +437,10 @@ header {
   max-width: 1100px;
 }
 
+.ok {
+  color: #b3ac1e;
+}
+
 .review-container {
     display: flex;
     flex-direction: column;
@@ -411,7 +451,7 @@ header {
     margin: 20px;
     max-width: 430px;
     background-color: white;
-    border: 1px solid #111827;
+    border: 1px solid var(--dark-color);
     box-shadow: 0px 3px 25px -7px rgba(0,0,0,0.3);
 
     background-image: url("./images/blob.svg");
@@ -453,7 +493,7 @@ padding-bottom: 10px;
 }
 
 .face-wrapper > p {
-  color: #111827;
+  color: var(--dark-color);
   font-weight: 650;
   font-variation-settings: "wght" 650;
   padding: 15px;
@@ -624,8 +664,8 @@ padding-bottom: 10px;
 } */
 
 .carousel {
-  background: rgb(255, 255, 255);
-  margin: 20px 0px 60px 0px;
+  /* background: rgb(255, 255, 255); */
+  margin: 0px 0px 60px 0px;
 }
 
 .carousel-cell {
@@ -658,7 +698,7 @@ padding-bottom: 10px;
   align-items: center;
   padding: 80px 10px;
   text-align: right;
-  background-color: #111827;
+  background-color: var(--dark-color);
 } */
 
 .timeline-title {
@@ -674,7 +714,7 @@ padding-bottom: 10px;
 
 .timeline-section {
   padding: 20px 15px 20px 25px;
-  /* background-color: #111827; */
+  /* background-color: var(--dark-color); */
 }
 
 .timeline {
@@ -865,6 +905,17 @@ padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) { 
+  .hero-bg {
+    background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(158,211,255,0.4) 100%), url('./images/hero-shape-2.svg') no-repeat right, url('./images/hero-shape-1.svg') no-repeat left top;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
   h1 {
     font-size: 3.125rem;
   }
@@ -881,10 +932,6 @@ padding-bottom: 10px;
     /* background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0px 3px 25px -7px rgba(0,0,0,0.3); */
     /* to make it sticky */
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 999;
   }
 
   main {
