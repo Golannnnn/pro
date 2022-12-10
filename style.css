@@ -190,7 +190,7 @@ button:hover {
 .header__dropdown__options {
   display: none;
   position: absolute;
-  padding: 10px;
+  padding: 10px 10px;
   margin-top: 25px;
   border-radius: 5px;
   background: #fff;
@@ -218,7 +218,7 @@ button:hover {
 .header__dropdown__options__item a {
   width: 100%;
   border-radius: 5px;
-  padding: 15px;
+  padding: 15px 30px;
   font-weight: 550;
   font-variation-settings: "wght" 550;
 }
@@ -347,6 +347,10 @@ button:hover {
   padding-left: 5px;
 }
 
+.intro__btn-wrapper {
+  flex-direction: column-reverse;
+}
+
 .intro__btn-wrapper__btn {
   margin: 10px 10px;
   padding: 15px 30px;
@@ -360,6 +364,10 @@ button:hover {
   .intro__sub-title {
     font-size: 1.5rem;
     width: 70%;
+  }
+
+  .intro__btn-wrapper {
+    flex-direction: row;
   }
 }
 
@@ -478,55 +486,65 @@ button:hover {
   }
 }
 
-/* features */
+/* companies */
 
-.features {
+.companies {
   padding: 0px 10px;
 }
 
-.features__heading {
+.companies__heading {
   padding: 50px 0px 0px 0px;
 }
 
-.features__container {
+.companies__container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.features__container__item {
+.companies__container__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.features__container__item img {
+.companies__container__item img {
   width: 150px;
   height: 150px;
 }
 
 @media screen and (min-width: 768px) { 
-  .features__container {
+  .companies__container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .features__container__item {
+  .companies__container__item {
     margin: 0px 40px;
   }
 }
 
 @media screen and (min-width: 1024px) { 
-  .features__container__item {
+  .companies__container__item {
     margin: 0px 80px;
   }
 
-  .features__container__item img {
+  .companies__container__item img {
     width: 200px;
     height: 200px;
   }
+}
+
+/* features */
+
+.features__container {
+
+}
+
+.features__container img {
+  width: 250px;
 }
 
 /* pricing */
@@ -535,7 +553,7 @@ button:hover {
   background-color: white;
   border: 1px solid #cfcfcf;
   border-radius: 5px;
-  padding: 20px 40px;
+  padding: 20px 50px;
   margin: 20px 10px;
 }
 
