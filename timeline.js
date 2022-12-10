@@ -1,46 +1,17 @@
-$(function () {
-  window.sr = ScrollReveal();
+const items = document.querySelectorAll(".appear");
 
-  if ($(window).width() < 768) {
-    if ($(".timeline-content").hasClass("js--fadeInLeft")) {
-      $(".timeline-content")
-        .removeClass("js--fadeInRight")
-        .addClass("js--fadeInLeft");
+const active = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("inview");
+    } else {
+      entry.target.classList.remove("inview");
     }
-
-    sr.reveal(".js--fadeInRight", {
-      origin: "right",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-  } else {
-    sr.reveal(".js--fadeInLeft", {
-      origin: "left",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-
-    sr.reveal(".js--fadeInRight", {
-      origin: "right",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-  }
-
-  sr.reveal(".js--fadeInLeft", {
-    origin: "left",
-    distance: "300px",
-    easing: "ease-in-out",
-    duration: 800,
   });
+};
 
-  sr.reveal(".js--fadeInRight", {
-    origin: "right",
-    distance: "300px",
-    easing: "ease-in-out",
-    duration: 800,
-  });
-});
+const io2 = new IntersectionObserver(active);
+
+for (let i = 0; i < items.length; i++) {
+  io2.observe(items[i]);
+}

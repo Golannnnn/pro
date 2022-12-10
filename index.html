@@ -1,428 +1,364 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="flickity.min.css" media="screen" />
-    <title>The Professionals</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+  <title>The Professionals</title>
 </head>
 <body>
-    <div class="hero-bg">
-    <header class="transparent">
-        <div id="header-right">
-            <button>להתחיל</button>
-        </div>
-        <div class="header-middle">
-            <p><a href="#">צור קשר</a></p>
-            <p><a href="#">מי אנחנו</a></p>
-            <p><a href="#plans">הקורסים</a></p>
-            <p><a href="#">בית</a></p>
-        </div>
-        <div id="header-left">
-            <h2 id="logo">הפרופשיונלס</h2>
-            <img src="./images/bar-graph.png" alt="">
-        </div>
-    </header>
 
-        <section id="intro">
+  <header class="header bg-light">
+    <button class="header__btn">להתחיל</button>
 
-            <div id="intro-right">
-                <h1>זה סתם משפט בעברית</h1>
-                <h3>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</h3>
-                <div id="rating">
-                    <div id="star-images">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                        <img src="./images/star.png">
-                    </div>
-                    <p class="small-bold-text">חמישה כוכבים</p>
-                </div>
-                <!-- <p class="intro-box">זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו. המטרה בשימוש ב-Lorem Ipsum הוא שיש לו פחות או יותר תפוצה של אותיות</p> -->
-                <button id="intro-button">אני רוצה את הקורס</button>
-                <!-- <h4>:הלקוחות שלנו</h4> -->
-                <!-- <div id="customers-wrapper">
-                    <img src="./images/Upstream-13.svg">
-                    <img src="./images/Upstream-14.svg">
-                    <img src="./images/Upstream.svg">
-                    <img src="./images/Upstream-16.svg">
+    <div class="header__dropdown">
+      <div class="header__dropdown__btn"></div>
 
-                </div> -->
-            </div>
+      <ul class="header__dropdown__options">
+          <il class="header__dropdown__options__item">
+            <a href="#">צור קשר</a>
+            <a href="#">מי אנחנו</a>
+            <a href="#">הקורסים</a>
+            <a href="#">בית</a>
+          </il>
+      </ul>
+  </div>
 
-            <!-- <div id="intro-left">
-                <img src="./images/notification_illustration_3.svg" class="intro-img">
-            </div> -->
-            <!-- <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by juicy_fish - Flaticon</a> -->
-            <!-- <a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon</a> -->
-
-        </section>
+    <nav class="header__nav">
+      <ul class="header__nav__ul hr-w">
+        <li class="header__nav__ul__li"><a href="#">צור קשר</a></li>
+        <li class="header__nav__ul__li"><a href="#">מי אנחנו</a></li>
+        <li class="header__nav__ul__li"><a href="#">הקורסים</a></li>
+        <li class="header__nav__ul__li"><a href="#">בית</a></li>
+      </ul>
+    </nav>
+    <div class="header__logo-wrapper hr-w">
+      <p class="header__logo-wrapper__title">הפרופשיונלס</p>
+      <img src="./images/bar-graph.png" alt="logo" class="header__logo-wrapper__img">
     </div>
+  </header>
 
-
-        <main>
-        <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "autoPlay": true }'>
-            <div class="carousel-cell">
-                <img src="./images/1-5.png" alt="orange tree" />
-            </div>
-            <div class="carousel-cell">
-                <img src="./images/10.png" alt="submerged" />
-            </div>
-            <div class="carousel-cell">
-                <img src="./images/13.png" alt="look-out" />
-            </div>
-            <div class="carousel-cell">
-                <img src="./images/18.png" alt="One World Trade" />
-            </div>
-            <div class="carousel-cell">
-                <img src="./images/2-4.png" alt="drizzle" />
-            </div>
-            <div class="carousel-cell">
-                <img src="./images/3-4.png" alt="cat nose" />
-            </div>
+    <section class="intro vr-w bg-light">
+      <h1>זה סתם משפט בעברית</h1>
+      <p class="intro__sub-title txt-light">זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
+      <!-- <div class="hr-w">
+        <div class="hr-w star-w">
+          <img src="./images/star.png" alt="star">
+          <img src="./images/star.png" alt="star">
+          <img src="./images/star.png" alt="star">
+          <img src="./images/star.png" alt="star">
+          <img src="./images/star.png" alt="star">
+        </div>
+        <p class="intro__star-txt txt-light">חמישה כוכבים</p>
+      </div> -->
+      <div class="intro__btn-wrapper hr-w wrp-r">
+        <button class="intro__btn-wrapper__btn btn--light">תקרא עוד</button>
+        <button class="intro__btn-wrapper__btn">אני רוצה את הקורס</button>
       </div>
-
-
-
-        <!-- <section class="pics" id="margins">
-            <div id="margins-right">
-                <div id="main-container">
-                    <img src="./images/arrow-left.svg" alt="arrow-left" id="previous">
-                    <div id="image-container">
-                        <img src="./images/1-5.png" alt="ipod" class="invisible">
-                        <img src="./images/2-4.png" alt="console" class="invisible">
-                        <img src="./images/3-4.png" alt="mouse" class="invisible">
-                        <img src="./images/4-3.png" alt="polariod" class="visible invisible">
-                        <img src="./images/5-2.png" alt="vault" class="invisible">
-                        <img src="./images/10.png" alt="open-vault" class="invisible">
-                        <img src="./images/13.png" alt="camera" class="invisible">
-                        <img src="./images/18.png" alt="printer" class="invisible">
-                    </div>
-                    <img src="./images/arrow-right.svg" alt="arrow-right" id="next">
-                </div>
-                <div id="circles-container">
-                    <div class="circle" data-index="0"></div>
-                    <div class="circle" data-index="1"></div>
-                    <div class="circle" data-index="2"></div>
-                    <div class="circle" data-index="3"></div>
-                    <div class="circle" data-index="4"></div>
-                    <div class="circle" data-index="5"></div>
-                    <div class="circle" data-index="6"></div>
-                    <div class="circle" data-index="7"></div>
-                </div>
-            </div>
-        </section> -->
-        <section class="pricing-section">
-        <div class="pricing-title">
-            <h1>הקורסים שלנו</h1>
-        </div>
-        <div id="pricing">
-            <div class="price-container prem-container">
-                <div class="price-top-wrapper prem-wrapper">
-                    <img src="./images/bitcoin_icon_2.svg" alt="">
-                    <h3>קורס פרמיום</h3>
-                    <p>תשלום חד פעמי של ₪300</p>
-                    <div class="price-btn-wrapper">
-                        <button class="prem-btn">תקנה את הקורס</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 1</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 2</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 3</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 3</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 3</p>
-                </div>
-            </div>
-
-            <div class="price-container reg-container">
-                <div class="price-top-wrapper">
-                    <img src="./images/bitcoin_icon_6.svg" alt="">
-                    <h3>קורס המשך</h3>
-                    <p>תשלום חד פעמי של ₪200</p>
-                    <div class="price-btn-wrapper">
-                        <button class="prem-btn">תקנה את הקורס</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 1</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 2</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 3</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 3</p>
-                </div>
-            </div>
-
-            <div class="price-container reg-container">
-                <div class="price-top-wrapper">
-                    <img src="./images/bitcoin_icon_3.svg" alt="">
-                    <h3>קורס התחלה</h3>
-                    <p>תשלום חד פעמי של ₪100</p>
-                    <div class="price-btn-wrapper">
-                        <button class="prem-btn">תקנה את הקורס</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 1</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 2</p>
-                </div>
-                <div class="price-bullet-wrapper">
-                    <img src="./images/checkmark.png" alt="">
-                    <p>פרק על משהו מסוים 3</p>
-                </div>
-            </div>
-        </div>
     </section>
 
-        <section class="review-section">
-            <h1>מה אנשים אומרים</h1>
-            <div class="reviews">
-                <div class="review-container">
-                    <div class="star-wrapper">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                    </div>
-                    <p>וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
-                    <div class="face-wrapper">
-                        <img src="./images/Guacamole.svg" alt="">
-                        <p>מישהו</p>
-                    </div>
-                </div>
-
-                <div class="review-container">
-                    <div class="star-wrapper">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                    </div>
-                    <p>וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
-                    <div class="face-wrapper">
-                        <img src="./images/Guacamole-1.svg" alt="">
-                        <p>מישהו</p>
-                    </div>
-                </div>
-
-                <div class="review-container">
-                    <div class="star-wrapper">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                    </div>
-                    <p>וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
-                    <div class="face-wrapper">
-                        <img src="./images/Guacamole-2.svg" alt="">
-                        <p>מישהו</p>
-                    </div>
-                </div>
-
-                <div class="review-container">
-                    <div class="star-wrapper">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                        <img src="./images/star.png" alt="">
-                    </div>
-                    <p>וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
-                    <div class="face-wrapper">
-                        <img src="./images/Guacamole-3.svg" alt="">
-                        <p>מישהו</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <section class="timeline-dark-bg">
-            <div class="svg-wrapper">
-
-            </div>
-            <div class="timeline-title">
-                <h1>איך בנוי הקורס</h1>
-            </div>
-            
-            <section class="timeline-section">
-                <section class="timeline">
-                    <div class="container">
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInLeft">
-                          <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                          <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInRight">
-                            <h3>פרק 1</h3>
-                            <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInLeft">
-                            <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInRight">
-                                                  <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInLeft">
-                                                  <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInRight">
-                                                  <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInLeft">
-                                                  <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                  
-                      <!-- <div class="timeline-item">
-                  
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content timeline-card js--fadeInRight">
-                          <div class="timeline-img-header">
-                            <h2>Card Title</h2>
-                          </div>
-                          <div class="date">19 AUG 2016</div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-                        </div>
-                      </div>   -->
-                  
-                      <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                  
-                        <div class="timeline-content js--fadeInRight">
-                                                  <h3>פרק 1</h3>
-                          <h2> מבוא לדרופשיפינג </h2>
-                                                  <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו</p>
-                        </div>
-                      </div> 
-                    </div>
-                  </section>
-            </section>
-            <div class="svg-wrapper-sec">
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- <footer>
-        <div class="plan-wrapper">
-            <div class="right-plan">
-                <p class="bold">מסלול התחלה</p>
-                <div><img src="./images/colorful_icons_5.png"></div>
-                <p>₪200</p>
-                <button>לקנות</button>
-            </div>
-            <div class="left-plan">
-                <p>זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא יביט בפריסתו<p>
-                <p>1 זה משהו שלומדים <img src="./images/dot.png" class="dot"></p>
-                <p>1 זה משהו שלומדים <img src="./images/dot.png" class="dot"></p>
-                <p>1 זה משהו שלומדים <img src="./images/dot.png" class="dot"></p>
-                <p>1 זה משהו שלומדים <img src="./images/dot.png" class="dot"></p>
-                <p>1 זה משהו שלומדים <img src="./images/dot.png" class="dot"></p>
+    <section class="slider vr-w bg-light">
+      <div class="blaze-slider">
+        <div class="blaze-container">
+          <div class="blaze-track-container">
+            <div class="blaze-track">
+              <div><img src="./images/1-5.png" alt="profits"></div>
+              <div><img src="./images/10.png" alt="profits"></div>
+              <div><img src="./images/13.png" alt="profits"></div>
+              <div><img src="./images/18.png" alt="profits"></div>
             </div>
           </div>
-    </footer> -->
 
-    <!-- <script src="https://gumroad.com/js/gumroad-embed.js"></script>
-    <div class="container">
-        <div class="gumroad-product-embed"><a href="https://henker.gumroad.com/l/drop">Loading...</a></div>
-    </div> -->
-    <script src="./slider.js"></script>
-    <script src="./flickity.pkgd.min.js"></script>
-    <script src="./timeline.js"></script>
-    <script>
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+          <div class="blaze-pagination-wrapper">
+            <img src="./images/arrow-left.svg" aria-label="Go to previous slide" class="blaze-prev">
+            <div class="blaze-pagination"></div>
+            <img src="./images/arrow-right.svg" aria-label="Go to next slide" class="blaze-next">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features vr-w">
+      <h3 class="features__heading">תלמדו איך לעשות כסף בחנויות הכי גדולות</h3>
+      <div class="features__container">
+        <div class="features__container__item">
+          <img src="./images/EBay_logo.svg" alt="online-shop">
+        </div>
+
+        <div class="features__container__item">
+          <img src="./images/Amazon_logo.svg" alt="online-shop">
+        </div>
+
+        <div class="features__container__item">
+          <img src="./images/Alibaba-Group-Logo.svg" alt="online-shop">
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing vr-w bg-light">
+      <h2 class="sc-h">הקורסים שלנו</h2>
+      <div class="hr-w wrp">
+        <div class="pricing__container">
+          <img src="./images/bitcoin_icon_14.svg" alt="" class="pricing__container__img">
+          <h3>קורס פרמיום</h3>
+          <h4 class="txt-light">תשלום חד פעמי של ₪300</h4>
+          <button class="pricing__container__btn">תקנה את הקורס</button>
+          <hr class="pricing__container__hr">
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+        </div>
+
+        <div class="pricing__container">
+          <img src="./images/bitcoin_icon_10.svg" alt="" class="pricing__container__img">
+          <h3>קורס פרמיום</h3>
+          <h4 class="txt-light">תשלום חד פעמי של ₪300</h4>
+          <button class="pricing__container__btn">תקנה את הקורס</button>
+          <hr class="pricing__container__hr">
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+        </div>
+
+        <div class="pricing__container">
+          <img src="./images/bitcoin_icon_11.svg" alt="" class="pricing__container__img">
+          <h3>קורס פרמיום</h3>
+          <h4 class="txt-light">תשלום חד פעמי של ₪300</h4>
+          <button class="pricing__container__btn">תקנה את הקורס</button>
+          <hr class="pricing__container__hr">
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+          <div class="pricing__container__points hr-w">
+            <p>פרק על משהו מסוים 1</p>
+            <img src="./images/checkmark.png" alt="checkmark" class="pricing__container__icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews vr-w bg-dark">
+      <h2 class="reviews__heading sc-h">מה אנשים אומרים</h2>
+      <div class="reviews__container hr-w wrp">
+        <div class="reviews__container__item">
+          <div class="hr-w star-w">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+          </div>
+          <p class="reviews__container__item__p">וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
+          <div class="hr-w">
+            <p class="reviews__container__item__p-img">מישהו</p>
+            <img src="./images/Guacamole.svg" alt="face" class="reviews__container__item__img">
+          </div>
+        </div>
+
+        <div class="reviews__container__item">
+          <div class="hr-w star-w">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+          </div>
+          <p class="reviews__container__item__p">וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
+          <div class="hr-w">
+            <p class="reviews__container__item__p-img">מישהו</p>
+            <img src="./images/Guacamole-1.svg" alt="face" class="reviews__container__item__img">
+          </div>
+        </div>
+
+        <div class="reviews__container__item">
+          <div class="hr-w star-w">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+          </div>
+          <p class="reviews__container__item__p">וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
+          <div class="hr-w">
+            <p class="reviews__container__item__p-img">מישהו</p>
+            <img src="./images/Guacamole-2.svg" alt="face" class="reviews__container__item__img">
+          </div>
+        </div>
+
+        <div class="reviews__container__item">
+          <div class="hr-w star-w">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+            <img src="./images/star.png" alt="star">
+          </div>
+          <p class="reviews__container__item__p">וכו גדחכוג גיחגדגד חגכדגון כחכו גוג כגיכ גוגוכ יכחג גוכ גחגוכ דגי כח ו גוגטקר כלדגםו ׳םןבצ הייכט גחגןוכ</p>
+          <div class="hr-w">
+            <p class="reviews__container__item__p-img">מישהו</p>
+            <img src="./images/Guacamole-3.svg" alt="face" class="reviews__container__item__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-wrapper vr-w">
+      <h2 class="timeline-wrapper__heading sc-h">איך בנוי הקורס</h2>
+      <div class="timeline">
+        <div class="timeline__container">
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
       
-        if (scroll >= 400) {
-          $("header").removeClass("transparent");
-          $("header").addClass("fixed");
-        } else {
-          $("header").addClass("transparent");
-          $("header").removeClass("fixed");
-        }
-      });
-    </script>
+            <div class="timeline__container__item__content js--fadeInLeft">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInRight">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInLeft">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInRight">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInLeft">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInRight">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInLeft">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline__container__item appear">
+            <div class="timeline__container__item__img"></div>
+      
+            <div class="timeline__container__item__content js--fadeInRight">
+              <h4 class="txt-light">פרק 1</h4>
+              <h3>מבוא לדרופשיפינג</h3>
+              <p>
+                זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס קריא כאשר הוא
+                יביט בפריסתו זוהי עובדה מבוססת שדעתו של הקורא תהיה מוסחת על ידי טקטס
+                קריא כאשר הוא יביט בפריסתו
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+    
+  <script src="./dropdown.js" defer></script>
+  <script src="./blazeslider.js" defer></script>
+  <script src="./timeline.js" defer></script>
 </body>
 </html>
