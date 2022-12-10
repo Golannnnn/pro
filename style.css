@@ -182,8 +182,8 @@ button:hover {
 
 .header__dropdown__btn {
   background-image: url('./images/menu.svg');
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -191,7 +191,7 @@ button:hover {
   display: none;
   position: absolute;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
